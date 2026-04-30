@@ -27,7 +27,7 @@ A small marketing company is setting up their office network. They have one Clas
 
 **Network Diagram**
 
-**![][[image1](https://github.com/Cyy26/networking-labs/blob/main/01-subnet-design/network-diagram.png?raw=true)]**
+![image alt](https://github.com/Cyy26/networking-labs/blob/main/01-subnet-design/network-diagram.png?raw=true)
 
 **Design Rationale:**
 
