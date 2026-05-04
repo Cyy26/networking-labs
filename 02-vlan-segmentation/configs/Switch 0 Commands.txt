@@ -1,0 +1,43 @@
+enable
+conf t
+vlan 10
+name sales
+exit
+
+vlan 20
+name engineering
+exit
+
+vlan 30
+name guest
+exit
+
+int fa0/1
+switchport mode access
+switchport access vlan 10
+exit
+
+int fa0/2
+switchport mode access
+switchport access vlan 10
+exit
+
+int fa0/10
+switchport mode access
+switchport access vlan 20
+exit
+
+int fa0/11
+switchport mode access
+switchport access vlan 20
+exit
+
+int ga0/2
+switchport mode trunk
+switchport trunk allowed vlan 10,20,30
+
+int ga0/1
+switchport mode trunk
+switchport trunk allowed vlan 10,20,30
+
+

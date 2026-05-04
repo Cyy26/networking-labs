@@ -1,0 +1,31 @@
+
+enable
+configure terminal
+
+vlan 10
+name sales
+exit
+
+name vlan 20
+name engineering
+exit
+
+name vlan 30
+name guest
+exit
+
+int fa0/1
+switchport mode access
+switchport access vlan 30
+exit
+
+int fa0/2
+switchport mode access
+switchport access vlan 30
+exit
+
+int gig0/1
+switchport mode trunk
+switchport trunk allowed vlan 10,20,30
+exit
+
