@@ -1,4 +1,4 @@
-<img width="464" height="208" alt="image" src="https://github.com/user-attachments/assets/90f7b892-5ab9-4152-bd3d-3d1ff4e8d8c0" /># **PROJECT 2: VLAN Segmentation Lab**
+**PROJECT 2: VLAN Segmentation Lab**
 
 #### By: Cydrick James Cortel
 
