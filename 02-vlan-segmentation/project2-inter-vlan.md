@@ -1,4 +1,4 @@
-# **PROJECT 2: VLAN Segmentation Lab**
+<img width="464" height="208" alt="image" src="https://github.com/user-attachments/assets/90f7b892-5ab9-4152-bd3d-3d1ff4e8d8c0" /># **PROJECT 2: VLAN Segmentation Lab**
 
 #### By: Cydrick James Cortel
 
@@ -25,7 +25,7 @@ Network Requirements
 
 **Network Topology**
 
-![][image1]
+![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/Network%20Topology.png?raw=true)
 
 **SW1 connects to:**  
 \- Sales PCs (VLAN 10\) on ports Fa0/0-0/9  
@@ -190,26 +190,25 @@ ip access-group 100 in
 
 **Test 1: Intra-VLAN Communication**  
 **VLAN 10**  
-**![][image2]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/Intra-VLAN%2010.png?raw=true)**
 
 **VLAN 20**  
-**![][image3]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/Intra-VLAN%2020.png?raw=true)**
 
 **VLAN 30**  
-**![][image4]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/Intra-VLAN%2030.png?raw=true)**
 
 **Test 2: Inter-VLAN Communication**
 
 **VLAN 20 \-\> VLAN 10**  
-**![][image5]**
-
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/Inter-VLAN%20Test%201.png?raw=true)
 **VLAN 10 \-\> VLAN 20**  
-**![][image6]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/Inter-VLAN%20Test%202.png?raw=true)**
 
 **Test 3: Guest VLAN Isolation**
 
 **VLAN 30 \-\> VLAN 10 & 20**  
-**![][image7]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/ACL%20Guest%20VLAN.png?raw=true)**
 
 **Verification Commands Output**
 
@@ -217,27 +216,27 @@ ip access-group 100 in
 
 * **show vlan brief**
 
-**![][image8]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/SW0%20-%20show%20vlan%20brief.png?raw=true)**
 
 * **show interfaces trunk**
 
-**![][image9]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/SW0%20-%20show%20interfaces%20trunk.png?raw=true)**
 
 **Switch1**
 
 * **show vlan brief**
 
-**![][image10]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/SW1%20-%20show%20vlan%20brief.png?raw=true)**
 
 * **show interfaces trunk**
 
-**![][image11]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/SW1%20-%20show%20interfaces%20trunk.png?raw=true)**
 
 **Router0**
 
 * **show ip interfaces brief**
 
-**![][image12]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/R0%20-%20show%20ip%20interfaces%20brief.png?raw=true)**
 
 **Challenges Encountered**  
 **One of the challenges that I encountered is the configuration for the default gateway of each vlans. It slipped into my mind that this is a router-on-a-stick. Also, the one thing that made me stuck is the configuration of ACL and the concept behind it. Because of this, I tried researching on how ACL works and where do you use it.**
