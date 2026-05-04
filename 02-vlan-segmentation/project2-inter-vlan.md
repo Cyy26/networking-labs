@@ -1,4 +1,4 @@
-**PROJECT 2: VLAN Segmentation Lab**
+# **PROJECT 2: VLAN Segmentation Lab**
 
 #### By: Cydrick James Cortel
 
