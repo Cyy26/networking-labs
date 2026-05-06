@@ -6,11 +6,11 @@ vlan 10
 name sales
 exit
 
-name vlan 20
+vlan 20
 name engineering
 exit
 
-name vlan 30
+vlan 30
 name guest
 exit
 
