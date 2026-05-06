@@ -69,7 +69,7 @@ A small company wants to segment their network for security and performance. Dif
 
 # **Configuration Steps**
 
-**Step 1: VLAN Configuration**
+## **Step 1: VLAN Configuration** ##
 **Switch0 Commands:**  
 enable  
 conf t  
@@ -133,7 +133,7 @@ exit
 
 
 
-**Step 2: Trunk Configuration**  
+## **Step 2: Trunk Configuration** ##
 **Switch0 \<-\> Switch1**  
 **Switch 0 Config:**  
 int ga0/2  
@@ -155,7 +155,7 @@ switchport trunk allowed vlan 10,20,30
 
 
 
-**Step 3: Inter-VLAN Routing**  
+## **Step 3: Inter-VLAN Routing** ## 
 **Router0 Commands:**
 
 enable  
@@ -182,7 +182,7 @@ ip address 192.168.30.1 255.255.255.0
 
 
 
-**Step 4: ACL Configuration**  
+## **Step 4: ACL Configuration** ##  
 **Router Config:**
 
 access-list 100 deny ip 192.168.30.0 0.0.0.255 192.168.10.0 0.0.0.255  
