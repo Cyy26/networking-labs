@@ -70,7 +70,6 @@ A small company wants to segment their network for security and performance. Dif
 # **Configuration Steps**
 
 **Step 1: VLAN Configuration**
-
 **Switch0 Commands:**  
 enable  
 conf t  
@@ -132,6 +131,8 @@ switchport mode access
 switchport access vlan 30  
 exit
 
+
+
 **Step 2: Trunk Configuration**  
 **Switch0 \<-\> Switch1**  
 **Switch 0 Config:**  
@@ -150,6 +151,9 @@ exit
 int ga0/1  
 switchport mode trunk  
 switchport trunk allowed vlan 10,20,30
+
+
+
 
 **Step 3: Inter-VLAN Routing**  
 **Router0 Commands:**
@@ -174,6 +178,9 @@ exit
 int g0/0.30  
 encapsulation dot1Q 30  
 ip address 192.168.30.1 255.255.255.0
+
+
+
 
 **Step 4: ACL Configuration**  
 **Router Config:**
