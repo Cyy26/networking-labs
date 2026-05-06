@@ -27,7 +27,7 @@ A small company wants to segment their network for security and performance. Dif
 
 # **Network Topology Diagram**
 
-![][image1]
+![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/Network%20Topology.png?raw=true)
 
 **SW1 connects to:**  
 \- Sales PCs (VLAN 10\) on ports Fa0/0-0/9  
@@ -209,26 +209,26 @@ This is standard practice in enterprise network where:
 ## **Test 1: Intra-VLAN Communication**
 
 **VLAN 10**  
-**![][image2]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/Intra-VLAN%2010.png?raw=true)**
 
 **VLAN 20**  
-**![][image3]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/Intra-VLAN%2020.png?raw=true)**
 
 **VLAN 30**  
-**![][image4]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/Intra-VLAN%2030.png?raw=true)**
 
 ## **Test 2: Inter-VLAN Communication**
 
 **VLAN 20 \-\> VLAN 10**  
-**![][image5]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/Inter-VLAN%20Test%201.png?raw=true)
 
 **VLAN 10 \-\> VLAN 20**  
-**![][image6]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/Inter-VLAN%20Test%202.png?raw=true)**
 
 ## **Test 3: Guest VLAN Isolation**
 
 **VLAN 30 \-\> VLAN 10 & 20**  
-**![][image7]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/ACL%20Guest%20VLAN.png?raw=true)**
 
 ## **Verification Commands Output**
 
@@ -237,29 +237,29 @@ This is standard practice in enterprise network where:
 * **show vlan brief**
 
 
-**![][image8]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/SW0%20-%20show%20vlan%20brief.png?raw=true)**
 
 * **show interfaces trunk**
 
-**![][image9]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/SW0%20-%20show%20interfaces%20trunk.png?raw=true)**
 
 **Switch1**
 
 * **show vlan brief**
 
 
-**![][image10]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/SW1%20-%20show%20vlan%20brief.png?raw=true)**
 
 * **show interfaces trunk**
 
 
-**![][image11]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/SW1%20-%20show%20interfaces%20trunk.png?raw=true)**
 
 **Router0**
 
 * **show ip interfaces brief**
 
-**![][image12]**
+**![image alt](https://github.com/Cyy26/networking-labs/blob/main/02-vlan-segmentation/screenshots/R0%20-%20show%20ip%20interfaces%20brief.png?raw=true)**
 
 # **Challenges Encountered**
 
